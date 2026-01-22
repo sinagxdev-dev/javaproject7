@@ -4,17 +4,17 @@ import java.util.Scanner;
 public class SalesFruitsComputation {
     Scanner input = new Scanner(System.in);
 
-    public void calculateFruit(String name, double small, double medium, double large) {
+    public void calculateFruit(String name, double s, double m, double l) {
         double totalcost = 0;
         System.out.print("Enter " + name + " size (Small, Medium, or Large): ");
         String fruitSize = input.nextLine();
 
         if (fruitSize.equalsIgnoreCase("small")) {
-            totalcost = small;
+            totalcost = s;
         } else if (fruitSize.equalsIgnoreCase("medium")) {
-            totalcost = medium;
+            totalcost = m;
         } else if (fruitSize.equalsIgnoreCase("large")) {
-            totalcost = large;
+            totalcost = l;
         } else {
             System.out.println("Invalid size");
             return;
